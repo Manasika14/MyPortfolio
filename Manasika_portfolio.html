@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manasika V | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* BACKGROUND */
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    padding:20px 60px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+header a{
+    background:white;
+    text-decoration:none;
+    color:black;
+    padding:10px 20px;
+    margin-left:12px;
+    border-radius:25px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+header a:hover{
+    background:#1cc88a;
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:70px;
+    color:white;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-top:20px;
+    color:white;
+}
+
+/* SECTIONS */
+
+.section{
+    background:white;
+    margin:60px 5%;
+    border-radius:20px;
+    padding:100px 10%;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.section h2{
+    font-size:50px;
+    color:#667eea;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+/* SKILLS */
+
+.skills-container{
+    text-align:center;
+}
+
+.skill{
+    display:inline-block;
+    background:#667eea;
+    color:white;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:30px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#764ba2;
+}
+
+/* PROJECTS */
+
+.projects-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:300px;
+    background:#f8f9fc;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card h3{
+    color:#667eea;
+    margin-bottom:15px;
+}
+
+/* CARD COMMON */
+
+.card{
+    background:#f8f9fc;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    font-size:18px;
+    text-align:center;
+}
+
+#contact .card p{
+    font-size:22px;
+    font-weight:600;
+    margin:15px 0;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <a href="#">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificate">Certificate</a>
+    <a href="#contact">Contact</a>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Manasika V</h1>
+    <h2>MCA Student | Data Analyst | Python & SQL Developer</h2>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <span class="skill">Python Programming</span>
+        <span class="skill">SQL</span>
+        <span class="skill">HTML</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">Excel</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Time Management</span>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Sales Forecast – Tableau (2024)</h3>
+            <p>Built forecasting model and interactive dashboards.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Blood Bank Management System (2025)</h3>
+            <p>Developed using Python and SQL to manage donor records.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Exploratory Data Analysis (EDA) – Netflix</h3>
+            <p>Analyzed dataset to identify trends using Python.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>MCA</strong> – SNS College of Technology (2027)</p>
+        <br>
+        <p><strong>BCA</strong> – Manonmaniam Sundaranar University</p>
+        <p><strong>CGPA: 7.0</strong></p>
+    </div>
+</div>
+
+<!-- CERTIFICATE -->
+<div id="certificate" class="section">
+    <h2>Certification</h2>
+    <div class="card">
+        <p><strong>Data Science Visualization and Analysis – IIT Madras</strong></p>
+        <p>Pravartak Technologies Foundation</p>
+        <p>First Class with Distinction (B+)</p>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: manasika14@gmail.com</p>
+        <p>Phone: 8072897832</p>
+        <p>Location: Coimbatore, Tamil Nadu</p>
+    </div>
+</div>
+
+</body>
+</html>
